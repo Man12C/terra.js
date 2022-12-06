@@ -17,7 +17,7 @@ const terra = new LCDClient({
 
 const terraClassic = new LCDClient({
   chainID: 'columbus-5',
-  URL: 'https://lcd.terra.dev',
+  URL: 'https://terra-classic-lcd.publicnode.com',
 });
 
 const txAPI = new TxAPI(terra);

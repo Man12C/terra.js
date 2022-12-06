@@ -3,7 +3,7 @@ import { BaseAccount } from '../../../core';
 import { MnemonicKey } from '../../../key';
 import { LCDClient } from '../LCDClient';
 
-// TODO - restore to https://lcd.terra.dev
+// TODO - restore to https://terra-classic-lcd.publicnode.com
 const terra = new LCDClient({
   chainID: 'pisco-1',
   URL: 'https://pisco-lcd.terra.dev',

@@ -13,10 +13,10 @@ describe('APIRequester', () => {
   it('accept a standard URL', async () => {
     mockedAxios.get.mockResolvedValueOnce({ data: null });
 
-    const request = new APIRequester('https://lcd.terra.dev');
+    const request = new APIRequester('https://terra-classic-lcd.publicnode.com');
     await request.get('/foo');
 
-    expect(mockedAxios.get).toHaveBeenCalledWith('https://lcd.terra.dev/foo', {
+    expect(mockedAxios.get).toHaveBeenCalledWith('https://terra-classic-lcd.publicnode.com/foo', {
       params: {},
     });
   });
@@ -24,11 +24,11 @@ describe('APIRequester', () => {
   it('accept a deep URL', async () => {
     mockedAxios.get.mockResolvedValueOnce({ data: null });
 
-    const request = new APIRequester('https://lcd.terra.dev/bar');
+    const request = new APIRequester('https://terra-classic-lcd.publicnode.com/bar');
     await request.get('/foo');
 
     expect(mockedAxios.get).toHaveBeenCalledWith(
-      'https://lcd.terra.dev/bar/foo',
+      'https://terra-classic-lcd.publicnode.com/bar/foo',
       { params: {} }
     );
   });
@@ -36,11 +36,11 @@ describe('APIRequester', () => {
   it('accept an URL with search params', async () => {
     mockedAxios.get.mockResolvedValueOnce({ data: null });
 
-    const request = new APIRequester('https://lcd.terra.dev?key=123');
+    const request = new APIRequester('https://terra-classic-lcd.publicnode.com?key=123');
     await request.get('/foo');
 
     expect(mockedAxios.get).toHaveBeenCalledWith(
-      'https://lcd.terra.dev/foo?key=123',
+      'https://terra-classic-lcd.publicnode.com/foo?key=123',
       { params: {} }
     );
   });

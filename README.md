@@ -67,7 +67,7 @@ const terra = new LCDClient({
 
 // connect to columbus-5 terra classic network
 const terra = new LCDClient({
-  URL: 'https://columbus-lcd.terra.dev',
+  URL: 'https://terra-classic-lcd.publicnode.com,
   chainID: 'columbus-5',
   isClassic: true  // *set to true to connect terra-classic chain*
 });

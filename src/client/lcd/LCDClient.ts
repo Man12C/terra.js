@@ -89,7 +89,7 @@ const DEFAULT_GAS_PRICES_BY_CHAIN_ID: { [key: string]: Coins.Input } = {
  * import { LCDClient, Coin } from 'terra.js';
  *
  * const terra = new LCDClient({
- *    URL: "https://lcd.terra.dev",
+ *    URL: "https://terra-classic-lcd.publicnode.com",
  *    chainID: "columbus-3"
  * });
  *

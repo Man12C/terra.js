@@ -13,7 +13,7 @@ async function main() {
 
   const columbus = new LCDClient({
     chainID: 'columbus-5',
-    URL: 'https://lcd.terra.dev',
+    URL: 'https://terra-classic-lcd.publicnode.com',
     gasPrices,
   });
 
